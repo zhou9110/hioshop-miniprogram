@@ -535,7 +535,7 @@ Page({
             number: Number(this.data.number) + 1
         });
         let checkedProductArray = this.getCheckedProductItem(this.getCheckedSpecKey());
-        let checkedProduct = checkedProductArray;
+        let checkedProduct = checkedProductArray[0];
         var check_number = this.data.number + 1;
         if (checkedProduct.goods_number < check_number) {
             this.setData({
